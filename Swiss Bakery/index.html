@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Swiss Bakery & Pastry Shop — Springfield, VA</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Loader -->
+<div class="page-loader" id="loader">
+  <div class="loader-logo">Swiss Bakery</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Swiss <span>Bakery</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#visit">Visit Us</a></li>
+    <li><a href="#shop" class="nav-cta">Order Online</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="deco-circle" style="width:600px;height:600px;top:-20%;left:-15%;"></div>
+  <div class="hero-left fade-up visible">
+    <div class="hero-badge">Springfield, Virginia</div>
+    <h1 class="hero-title">
+      Authentic Swiss<br>
+      <em>Pastry & Bread</em>
+    </h1>
+    <p class="hero-subtitle">Handcrafted European pastries, breads, and confections — baked fresh every morning using traditional Swiss recipes.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn-primary">Explore Menu</a>
+      <a href="#visit" class="btn-secondary">Find Us</a>
+    </div>
+    <div class="hero-stars">
+      <span class="stars">★★★★★</span>
+      <span><strong>4.6</strong> · 1,136+ Google Reviews</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-grid">
+      <div class="hero-img-cell">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80" alt="Artisan bread loaves" loading="eager">
+        <div class="hero-img-overlay">Artisan Breads</div>
+      </div>
+      <div class="hero-img-cell">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80" alt="Croissants" loading="eager">
+        <div class="hero-img-overlay">Fresh Croissants</div>
+      </div>
+      <div class="hero-img-cell">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Swiss cakes" loading="eager">
+        <div class="hero-img-overlay">Swiss Cakes</div>
+      </div>
+      <div class="hero-img-cell">
+        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Pastries" loading="eager">
+        <div class="hero-img-overlay">Pastries</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span>Swiss Chocolate</span>
+    <span>Cheese Danish</span>
+    <span>Artisan Breads</span>
+    <span>European Imports</span>
+    <span>Custom Cakes</span>
+    <span>Caotina Hot Chocolate</span>
+    <span>Kambly Biscuits</span>
+    <span>Fresh Daily</span>
+    <span>Swiss Chocolate</span>
+    <span>Cheese Danish</span>
+    <span>Artisan Breads</span>
+    <span>European Imports</span>
+    <span>Custom Cakes</span>
+    <span>Caotina Hot Chocolate</span>
+    <span>Kambly Biscuits</span>
+    <span>Fresh Daily</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-img-stack fade-up">
+    <img class="about-img-main" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Bakery interior">
+    <img class="about-img-accent" src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&q=80" alt="Swiss pastries display">
+    <div class="about-badge">
+      <small>Since</small>
+      <span>Est.</span>
+      <small>Springfield</small>
+    </div>
+  </div>
+  <div class="about-content fade-up" data-delay="2">
+    <div class="section-header">
+      <span class="section-label">Our Story</span>
+      <h2 class="section-title">A Taste of <em>Switzerland</em> in Virginia</h2>
+    </div>
+    <p class="section-desc">Nestled in Springfield, The Swiss Bakery & Pastry Shop brings the rich traditions of European baking to Northern Virginia. Every item is crafted from scratch using imported Swiss ingredients and time-honored recipes passed down through generations.</p>
+    <p class="section-desc" style="margin-top:0.8rem;">From our legendary cheese Danish to traditional Swiss cookies, coconut cheesecake, and a curated selection of imported European products — we're a home away from home for those who love the authentic flavors of Switzerland.</p>
+    <div class="about-features" style="margin-top:2rem;">
+      <div class="feature-item">
+        <div class="feature-icon">🥐</div>
+        <div class="feature-text">
+          <h4>Baked Fresh Daily</h4>
+          <p>Everything made from scratch each morning</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🇨🇭</div>
+        <div class="feature-text">
+          <h4>Authentic Recipes</h4>
+          <p>Traditional Swiss & European techniques</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🛒</div>
+        <div class="feature-text">
+          <h4>European Imports</h4>
+          <p>Curated Swiss pantry products & treats</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🎂</div>
+        <div class="feature-text">
+          <h4>Custom Orders</h4>
+          <p>Special occasion cakes & seasonal logs</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:2rem;">
+      <a href="#visit" class="btn-primary">Visit the Bakery</a>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="section-header fade-up">
+    <span class="section-label">What We Make</span>
+    <h2 class="section-title">Fresh From <em>Our Oven</em></h2>
+    <p class="section-desc">Every item is handcrafted with care using traditional Swiss methods and the finest European ingredients.</p>
+  </div>
+
+  <div class="menu-tabs fade-up" data-delay="1">
+    <button class="menu-tab active" onclick="switchTab('pastries', this)">Pastries</button>
+    <button class="menu-tab" onclick="switchTab('breads', this)">Breads</button>
+    <button class="menu-tab" onclick="switchTab('cakes', this)">Cakes & Desserts</button>
+    <button class="menu-tab" onclick="switchTab('cafe', this)">Café</button>
+  </div>
+
+  <div id="pastries" class="menu-panel active fade-up" data-delay="2">
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🥐</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Fan Favorite</div>
+        <h3>Cheese Danish</h3>
+        <p>Flaky, buttery pastry with a rich Swiss cheese cream filling. Our most celebrated item.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🍪</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Traditional Swiss</div>
+        <h3>Swiss Cookies</h3>
+        <p>Traditional Swiss butter cookies — perfectly packaged, just like home. Also available online.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🥨</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Fresh Daily</div>
+        <h3>Croissants & Viennoiserie</h3>
+        <p>Laminated dough, baked golden — plain, almond, or chocolate.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="breads" class="menu-panel">
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🍞</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">House Specialty</div>
+        <h3>Swiss Rye Bread</h3>
+        <p>Dense, hearty rye with a moist crumb. Authentic Swiss farmhouse style.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🥖</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">European Style</div>
+        <h3>French Baguette</h3>
+        <p>Crisp crust, airy interior. Made fresh every morning.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🫓</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Daily Fresh</div>
+        <h3>Zopf Bread</h3>
+        <p>Classic braided Swiss Sunday bread with a rich, pillowy texture.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cakes" class="menu-panel">
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🎂</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Customer Favorite</div>
+        <h3>Coconut Cheesecake</h3>
+        <p>A signature dessert — velvety cheesecake layered with toasted coconut.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🍰</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Seasonal</div>
+        <h3>Chocolate Yule Log</h3>
+        <p>Beautifully decorated holiday Bûche de Noël. Perfect for celebrations.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🍮</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Custom Orders</div>
+        <h3>Special Occasion Cakes</h3>
+        <p>Birthdays, anniversaries & celebrations. Order in advance.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="cafe" class="menu-panel">
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">☕</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Hot Drinks</div>
+        <h3>Caotina Hot Chocolate</h3>
+        <p>Genuine Swiss Caotina powder — rich, velvety, and intensely chocolatey.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🧃</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">European Imports</div>
+        <h3>European Bottled Drinks</h3>
+        <p>A fun and hard-to-find selection of European sodas, juices, and mineral waters.</p>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img-placeholder">🥗</div>
+      <div class="menu-card-body">
+        <div class="menu-card-tag">Café Fare</div>
+        <h3>Light Bites & Sandwiches</h3>
+        <p>Simple, satisfying café fare served in our cozy dining area.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-banner">
+  <div class="stat-item fade-up">
+    <div class="stat-num">4.6★</div>
+    <div class="stat-label">Google Rating</div>
+  </div>
+  <div class="stat-item fade-up" data-delay="1">
+    <div class="stat-num">1,100+</div>
+    <div class="stat-label">Happy Reviews</div>
+  </div>
+  <div class="stat-item fade-up" data-delay="2">
+    <div class="stat-num">7</div>
+    <div class="stat-label">Days a Week</div>
+  </div>
+  <div class="stat-item fade-up" data-delay="3">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">From Scratch</div>
+  </div>
+</div>
+
+<!-- SHOP ONLINE CTA -->
+<section class="shop-cta" id="shop">
+  <div class="shop-cta-content fade-up">
+    <span class="section-label">Shop Online</span>
+    <h2>Order Your Favorites <em style="font-style:italic;color:var(--gold);">From Home</em></h2>
+    <p>Can't make it in person? Our traditional Swiss cookies and select products are available to order online — perfectly packaged and shipped with care.</p>
+    <a href="tel:+1-703-644-4004" class="btn-primary">Call to Order</a>
+  </div>
+  <div class="shop-items fade-up" data-delay="2">
+    <div class="shop-item">
+      <div class="shop-item-icon">🍪</div>
+      <div class="shop-item-text"><h4>Swiss Cookies</h4><p>Ships nationwide</p></div>
+    </div>
+    <div class="shop-item">
+      <div class="shop-item-icon">🍫</div>
+      <div class="shop-item-text"><h4>Chocolate Treats</h4><p>Swiss imported</p></div>
+    </div>
+    <div class="shop-item">
+      <div class="shop-item-icon">☕</div>
+      <div class="shop-item-text"><h4>Caotina Cocoa</h4><p>Original Swiss</p></div>
+    </div>
+    <div class="shop-item">
+      <div class="shop-item-icon">🎁</div>
+      <div class="shop-item-text"><h4>Gift Boxes</h4><p>Custom curated</p></div>
+    </div>
+    <div class="shop-item">
+      <div class="shop-item-icon">🥨</div>
+      <div class="shop-item-text"><h4>Kambly Biscuits</h4><p>Imported from CH</p></div>
+    </div>
+    <div class="shop-item">
+      <div class="shop-item-icon">🎂</div>
+      <div class="shop-item-text"><h4>Custom Cakes</h4><p>Order in advance</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-header fade-up">
+    <span class="section-label">Guest Voices</span>
+    <h2 class="section-title">What Our <em>Guests Say</em></h2>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card fade-up">
+      <div class="review-quote">"</div>
+      <p class="review-text">The cheese Danish was to die for. Service was excellent and the café had such a warm, European atmosphere — I felt transported.</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name">Maria T.</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card fade-up" data-delay="1">
+      <div class="review-quote">"</div>
+      <p class="review-text">I ordered the traditional Swiss cookies online and they were JUST like the ones my mom makes! Well packaged — not a single broken cookie. So grateful for this place.</p>
+      <div class="review-author">
+        <div class="review-avatar">L</div>
+        <div>
+          <div class="review-name">Laura K.</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card fade-up" data-delay="2">
+      <div class="review-quote">"</div>
+      <p class="review-text">Their desserts are SO GOOD! They have a lot of European products for sale and a cozy dining area with outdoor seating. Staff are all incredibly friendly.</p>
+      <div class="review-author">
+        <div class="review-avatar">J</div>
+        <div>
+          <div class="review-name">James W.</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:3rem;" class="fade-up">
+    <a href="https://g.co/kgs/swissbakery" target="_blank" class="btn-secondary" style="display:inline-block;">Read All 1,100+ Reviews on Google →</a>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit">
+  <div>
+    <div class="section-header">
+      <span class="section-label">Hours</span>
+      <h2 class="section-title">We're Open <em>Every Day</em></h2>
+    </div>
+    <table class="hours-table">
+      <tr><td>Monday – Friday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr><td>Saturday</td><td>8:00 AM – 4:00 PM</td></tr>
+      <tr><td>Sunday</td><td>8:00 AM – 4:00 PM</td></tr>
+    </table>
+    <div style="margin-top:2rem;">
+      <div class="feature-icon" style="width:auto;height:auto;background:transparent;display:inline-flex;gap:0.5rem;align-items:center;color:var(--gold-light);font-size:0.8rem;letter-spacing:0.05em;">
+        💡 Best to arrive early — popular items often sell out by noon!
+      </div>
+    </div>
+  </div>
+  <div class="visit-right">
+    <div class="section-header">
+      <span class="section-label">Location</span>
+      <h2 class="section-title">Find <em>The Shop</em></h2>
+    </div>
+    <div class="address-block">
+      <p>
+        5224 Port Royal Rd<br>
+        Springfield, VA 22151<br><br>
+        Located in the Port Royal Shopping Center, just off I-495 — easy parking available.
+      </p>
+      <a href="https://maps.google.com/?q=The+Swiss+Bakery+5224+Port+Royal+Rd+Springfield+VA" target="_blank">Get Directions →</a>
+    </div>
+    <div class="contact-list" style="margin-top:2rem;">
+      <div class="contact-item">
+        <span>📞</span>
+        <span>(703) 644-4004</span>
+      </div>
+      <div class="contact-item">
+        <span>🚗</span>
+        <span>Free parking available on-site</span>
+      </div>
+      <div class="contact-item">
+        <span>🪑</span>
+        <span>Dine-in & outdoor seating available</span>
+      </div>
+      <div class="contact-item">
+        <span>📦</span>
+        <span>Online ordering available for select items</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <h2>Fresh News. Sweet Offers. Straight to Your Inbox.</h2>
+  <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+    <input type="email" placeholder="Your email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">Swiss <span style="color:var(--gold)">Bakery</span></a>
+      <p>Authentic Swiss pastries, breads, and confections baked fresh daily in Springfield, Virginia. A little piece of Europe, right in your neighborhood.</p>
+      <div class="social-links">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">ig</a>
+        <a href="#" title="Google">g</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#shop">Shop Online</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Specialties</h4>
+      <ul>
+        <li><a href="#menu">Cheese Danish</a></li>
+        <li><a href="#menu">Swiss Cookies</a></li>
+        <li><a href="#menu">Coconut Cheesecake</a></li>
+        <li><a href="#menu">European Imports</a></li>
+        <li><a href="#menu">Custom Cakes</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+17036444004">(703) 644-4004</a></li>
+        <li><a href="https://maps.google.com" target="_blank">5224 Port Royal Rd</a></li>
+        <li><a href="https://maps.google.com" target="_blank">Springfield, VA 22151</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 The Swiss Bakery & Pastry Shop. All rights reserved.</span>
+    <span>Springfield, Virginia · Open 7 Days a Week</span>
+  </div>
+</footer>
+</body>
+</html>
